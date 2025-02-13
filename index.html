@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Estate - Luxury Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><i class="fas fa-home"></i> VILLA</h1>
+                <span>ESTATE AGENCY</span>
+            </div>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#property-details">Property Details</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#schedule" class="schedule-btn">Schedule a visit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h2>Toronto's <span>Luxury</span> Real Estate</h2>
+                <p>The best deals for luxury houses in Toronto</p>
+                <a href="#properties" class="cta-button">Explore Properties</a>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="section-header">
+                <span class="subtitle">| GALLERY</span>
+                <h2>Explore Our Property Gallery</h2>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811"
+                            alt="Property 1"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"
+                            alt="Property 2"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                            alt="Property 3"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf"
+                            alt="Property 4"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c"
+                            alt="Property 5"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Featured Properties Section -->
+<section id="featured" class="featured">
+    <div class="section-header">
+        <span class="subtitle">| PROPERTIES</span>
+        <h2>We Provide The Best Property You Like</h2>
+    </div>
+
+    <div class="property-grid">
+        <div class="property-card">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811" alt="Luxury Villa">
+                <span class="category">Luxury Villa</span>
+                <span class="price">$2.264.000</span>
+            </div>
+            <div class="property-info">
+                <h3>18 New Street Miami, OR 97219</h3>
+                <div class="property-details">
+                    <span><i class="fas fa-bed"></i> 8 Bedrooms</span>
+                    <span><i class="fas fa-bath"></i> 8 Bathrooms</span>
+                    <span><i class="fas fa-ruler-combined"></i> 545m<sup>2</sup></span>
+                    <span><i class="fas fa-car"></i> 3 Garages</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9" alt="Luxury Villa">
+                <span class="category">Luxury Villa</span>
+                <span class="price">$1.180.000</span>
+            </div>
+            <div class="property-info">
+                <h3>54 Mid Street Florida, OR 27001</h3>
+                <div class="property-details">
+                    <span><i class="fas fa-bed"></i> 6 Bedrooms</span>
+                    <span><i class="fas fa-bath"></i> 5 Bathrooms</span>
+                    <span><i class="fas fa-ruler-combined"></i> 450m<sup>2</sup></span>
+                    <span><i class="fas fa-car"></i> 2 Garages</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Luxury Villa">
+                <span class="category">Luxury Villa</span>
+                <span class="price">$1.460.000</span>
+            </div>
+            <div class="property-info">
+                <h3>26 Old Street Miami, OR 38540</h3>
+                <div class="property-details">
+                    <span><i class="fas fa-bed"></i> 5 Bedrooms</span>
+                    <span><i class="fas fa-bath"></i> 4 Bathrooms</span>
+                    <span><i class="fas fa-ruler-combined"></i> 225m<sup>2</sup></span>
+                    <span><i class="fas fa-car"></i> 2 Garages</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- <section id="calculator" class="calculator-section">
+            <div class="section-header">
+                <span class="subtitle">| CALCULATOR</span>
+                <h2>Estimate Your Mortgage</h2>
+            </div>
+            <div class="calculator-container">
+                <form id="mortgage-calculator">
+                    <label for="home-price">Home Price ($)</label>
+                    <input type="number" id="home-price" placeholder="Enter home price" required>
+                    
+                    <label for="down-payment">Down Payment (%)</label>
+                    <input type="number" id="down-payment" placeholder="Enter down payment percentage" required>
+                    
+                    <label for="interest-rate">Interest Rate (%)</label>
+                    <input type="number" id="interest-rate" placeholder="Enter annual interest rate" required>
+                    
+                    <label for="loan-term">Loan Term (Years)</label>
+                    <input type="number" id="loan-term" placeholder="Enter loan term in years" required>
+                    
+                    <button type="button" id="calculate-btn">Calculate</button>
+                </form>
+                <div id="result">
+                    <h3>Estimated Monthly Payment: <span id="monthly-payment">$0</span></h3>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <div class="section-header">
+                <span class="subtitle">| VIDEO VIEW</span>
+                <h2>Get Closer View & Different Feeling</h2>
+                <div class="video-placeholder">
+                    <iframe width="100%" height="415"
+                        src="https://www.youtube.com/embed/6X3N1iTLGL0?si=kMGPvGKxeYrsGbjR" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Deal Section -->
+        <section class="best-deal">
+            <div class="section-header">
+                <span class="subtitle">| BEST DEAL</span>
+                <h2>Find Your Best Deal Right Now!</h2>
+            </div>
+            <div class="deal-stats">
+                <div class="stat-item">
+                    <i class="fas fa-building"></i>
+                    <h3>34</h3>
+                    <p>Buildings<br>Finished Now</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-history"></i>
+                    <h3>12</h3>
+                    <p>Years<br>Experience</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3>24</h3>
+                    <p>Awards<br>Won 2023</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Property Categories Section -->
+<section class="categories">
+    <div class="categories-grid">
+        <div class="category-item">
+            <i class="fas fa-building"></i>
+            <h3>Apartment</h3>
+            <p>124</p>
+        </div>
+        <div class="category-item">
+            <i class="fas fa-home"></i>
+            <h3>Villa House</h3>
+            <p>340</p>
+        </div>
+        <div class="category-item">
+            <i class="fas fa-warehouse"></i>
+            <h3>Penthouse</h3>
+            <p>72</p>
+        </div>
+        <div class="category-item">
+            <i class="fas fa-hotel"></i>
+            <h3>Studio</h3>
+            <p>85 Properties</p>
+          </div>
+    </div>
+</section>
+
+        <!-- Featured Agents Section -->
+        <section class="agents">
+            <div class="section-header">
+                <span class="subtitle">| OUR AGENTS</span>
+                <h2>Meet Our Professional Agents</h2>
+            </div>
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <img src="https://media.istockphoto.com/id/2147591349/photo/confident-businessman-working-at-the-office-and-smiling.webp?a=1&b=1&s=612x612&w=0&k=20&c=ua3FUMm1rHJswxkK7kOAgfkI9rCgEk9tOGeRIVLiX4M="
+                        alt="Agent">
+                    <div class="agent-info">
+                        <h3>Michael Brown</h3>
+                        <p>Real Estate Agent</p>
+                        <div class="agent-social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1670282392820-e3590c1c5c54?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGdpcmx8ZW58MHx8MHx8fDA%3D" alt="Agent">
+                    <div class="agent-info">
+                        <h3>Sarah Johnson</h3>
+                        <p>Real Estate Agent</p>
+                        <div class="agent-social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6" alt="Agent">
+                    <div class="agent-info">
+                        <h3>Emily Davis</h3>
+                        <p>Real Estate Agent</p>
+                        <div class="agent-social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="section-header">
+                <span class="subtitle">| TESTIMONIALS</span>
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"Best experience ever! Found my dream house within weeks. Highly recommended!"</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Client">
+                        <div>
+                            <h4>John Smith</h4>
+                            <span>Happy Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"Very friendly and professional agents. They helped me find the perfect apartment!"</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="Client">
+                        <div>
+                            <h4>Emma Davis</h4>
+                            <span>Property Investor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"Very friendly and professional agents. They helped me find the perfect apartment!"</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Client">
+                        <div>
+                            <h4>Michael Lee</h4>
+                            <span>First-time Renter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"Highly efficient and supportive team. The process was smooth and stress-free."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Client">
+                        <div>
+                            <h4>Sophia Brown</h4>
+                            <span>Luxury Home Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="section-header">
+                <span class="newsletter-subtitle">| NEWSLETTER</span>
+                <h2>Get The Latest Property News</h2>
+            </div>
+            <div class="newsletter-content">
+                <p class="sub">Subscribe to our newsletter and never miss our newest properties</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <span class="subtitle">| CONTACT US</span>
+                <h2 class="head">Get In Touch With Us</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Our Location</h3>
+                        <p>123 Real Estate Street<br>Toronto, ON M5V 2L6</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone Number</h3>
+                        <p>+1 234 567 8900<br>+1 234 567 8901</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Address</h3>
+                        <p>info@villa.com<br>support@villa.com</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2688796570255!2d-79.3871189!3d43.6426411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb2b5935bf09%3A0x8a175b0fa5854281!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1647893321951!5m2!1sen!2sca"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>VILLA</h3>
+                <p>Best Real Estate Agency</p>
+                <p class="footer-description">We are committed to providing our clients with exceptional service and the
+                    best luxury properties in Toronto.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#agents">Agents</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> 010-020-0340</p>
+                <p><i class="fas fa-envelope"></i> info@villa.co</p>
+                <p><i class="fas fa-map-marker-alt"></i> Toronto, ON M5V 2L6</p>
+            </div>
+            <div class="footer-section">
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Villa Estate Agency. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+<!-- Include Swiper.js -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper-container", {
+        loop: true,  // Enables infinite loop
+        autoplay: {
+            delay: 3000, // Auto slide every 3 seconds
+            disableOnInteraction: false, // Keep autoplay running even after user interaction
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        slidesPerView: 3, // Adjust this for more images per view
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+        }
+    });
+</script>
+
+
+</html>
